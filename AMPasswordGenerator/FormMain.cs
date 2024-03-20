@@ -36,5 +36,18 @@ namespace AMPasswordGenerator
         {
             numChars.Value = 12;
         }
+
+        private void buttonPassword_Click(object sender, EventArgs e)
+        {
+            if (!typeCharUp.Checked & !typeCharLow.Checked & !typeDigit.Checked & !typeSpChar.Checked)
+            {
+                textPassword.Text = "Не выбраны типы символов";
+            }
+            else
+            {
+                PasswordGenerator passwordGenerator = new PasswordGenerator();
+                textPassword.Text = passwordGenerator.GetPasswordString(typeCharUp.Checked, typeCharLow.Checked, typeDigit.Checked, typeSpChar.Checked, Convert.ToInt32(numChars.Value));
+            }
+        }
     }
 }
