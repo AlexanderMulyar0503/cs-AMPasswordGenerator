@@ -36,18 +36,18 @@
             this.menuFormMainHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormMainAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.groupNum = new System.Windows.Forms.GroupBox();
-            this.numChars = new System.Windows.Forms.NumericUpDown();
-            this.setNum4 = new System.Windows.Forms.Button();
-            this.setNum8 = new System.Windows.Forms.Button();
             this.setNum12 = new System.Windows.Forms.Button();
+            this.setNum8 = new System.Windows.Forms.Button();
+            this.setNum4 = new System.Windows.Forms.Button();
+            this.numChars = new System.Windows.Forms.NumericUpDown();
             this.groupType = new System.Windows.Forms.GroupBox();
-            this.typeCharUp = new System.Windows.Forms.CheckBox();
-            this.typeCharLow = new System.Windows.Forms.CheckBox();
-            this.typeDigit = new System.Windows.Forms.CheckBox();
             this.typeSpChar = new System.Windows.Forms.CheckBox();
+            this.typeDigit = new System.Windows.Forms.CheckBox();
+            this.typeCharLow = new System.Windows.Forms.CheckBox();
+            this.typeCharUp = new System.Windows.Forms.CheckBox();
             this.groupPassword = new System.Windows.Forms.GroupBox();
-            this.textPassword = new System.Windows.Forms.TextBox();
             this.buttonPassword = new System.Windows.Forms.Button();
+            this.textPassword = new System.Windows.Forms.TextBox();
             this.menuFormMain.SuspendLayout();
             this.groupNum.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numChars)).BeginInit();
@@ -93,6 +93,7 @@
             this.menuFormMainExit.Name = "menuFormMainExit";
             this.menuFormMainExit.Size = new System.Drawing.Size(180, 22);
             this.menuFormMainExit.Text = "Выход";
+            this.menuFormMainExit.Click += new System.EventHandler(this.menuFormMainExit_Click);
             // 
             // menuFormMainHelp
             // 
@@ -105,7 +106,7 @@
             // menuFormMainAbout
             // 
             this.menuFormMainAbout.Name = "menuFormMainAbout";
-            this.menuFormMainAbout.Size = new System.Drawing.Size(180, 22);
+            this.menuFormMainAbout.Size = new System.Drawing.Size(149, 22);
             this.menuFormMainAbout.Text = "О программе";
             // 
             // groupNum
@@ -117,20 +118,50 @@
             this.groupNum.Controls.Add(this.setNum4);
             this.groupNum.Controls.Add(this.numChars);
             this.groupNum.Location = new System.Drawing.Point(13, 47);
-            this.groupNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupNum.Margin = new System.Windows.Forms.Padding(4);
             this.groupNum.Name = "groupNum";
-            this.groupNum.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupNum.Padding = new System.Windows.Forms.Padding(4);
             this.groupNum.Size = new System.Drawing.Size(308, 115);
             this.groupNum.TabIndex = 1;
             this.groupNum.TabStop = false;
             this.groupNum.Text = "Количество символов";
+            // 
+            // setNum12
+            // 
+            this.setNum12.Location = new System.Drawing.Point(225, 75);
+            this.setNum12.Name = "setNum12";
+            this.setNum12.Size = new System.Drawing.Size(75, 23);
+            this.setNum12.TabIndex = 3;
+            this.setNum12.Text = "12";
+            this.setNum12.UseVisualStyleBackColor = true;
+            this.setNum12.Click += new System.EventHandler(this.setNum12_Click);
+            // 
+            // setNum8
+            // 
+            this.setNum8.Location = new System.Drawing.Point(114, 75);
+            this.setNum8.Name = "setNum8";
+            this.setNum8.Size = new System.Drawing.Size(75, 23);
+            this.setNum8.TabIndex = 2;
+            this.setNum8.Text = "8";
+            this.setNum8.UseVisualStyleBackColor = true;
+            this.setNum8.Click += new System.EventHandler(this.setNum8_Click);
+            // 
+            // setNum4
+            // 
+            this.setNum4.Location = new System.Drawing.Point(8, 75);
+            this.setNum4.Name = "setNum4";
+            this.setNum4.Size = new System.Drawing.Size(75, 23);
+            this.setNum4.TabIndex = 1;
+            this.setNum4.Text = "4";
+            this.setNum4.UseVisualStyleBackColor = true;
+            this.setNum4.Click += new System.EventHandler(this.setNum4_Click);
             // 
             // numChars
             // 
             this.numChars.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numChars.Location = new System.Drawing.Point(8, 37);
-            this.numChars.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numChars.Margin = new System.Windows.Forms.Padding(4);
             this.numChars.Maximum = new decimal(new int[] {
             255,
             0,
@@ -150,33 +181,6 @@
             0,
             0});
             // 
-            // setNum4
-            // 
-            this.setNum4.Location = new System.Drawing.Point(8, 75);
-            this.setNum4.Name = "setNum4";
-            this.setNum4.Size = new System.Drawing.Size(75, 23);
-            this.setNum4.TabIndex = 1;
-            this.setNum4.Text = "4";
-            this.setNum4.UseVisualStyleBackColor = true;
-            // 
-            // setNum8
-            // 
-            this.setNum8.Location = new System.Drawing.Point(114, 75);
-            this.setNum8.Name = "setNum8";
-            this.setNum8.Size = new System.Drawing.Size(75, 23);
-            this.setNum8.TabIndex = 2;
-            this.setNum8.Text = "8";
-            this.setNum8.UseVisualStyleBackColor = true;
-            // 
-            // setNum12
-            // 
-            this.setNum12.Location = new System.Drawing.Point(225, 75);
-            this.setNum12.Name = "setNum12";
-            this.setNum12.Size = new System.Drawing.Size(75, 23);
-            this.setNum12.TabIndex = 3;
-            this.setNum12.Text = "12";
-            this.setNum12.UseVisualStyleBackColor = true;
-            // 
             // groupType
             // 
             this.groupType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -192,29 +196,17 @@
             this.groupType.TabStop = false;
             this.groupType.Text = "Типы символов";
             // 
-            // typeCharUp
+            // typeSpChar
             // 
-            this.typeCharUp.AutoSize = true;
-            this.typeCharUp.Checked = true;
-            this.typeCharUp.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.typeCharUp.Location = new System.Drawing.Point(27, 37);
-            this.typeCharUp.Name = "typeCharUp";
-            this.typeCharUp.Size = new System.Drawing.Size(187, 20);
-            this.typeCharUp.TabIndex = 0;
-            this.typeCharUp.Text = "Буквы (верхний регистр)";
-            this.typeCharUp.UseVisualStyleBackColor = true;
-            // 
-            // typeCharLow
-            // 
-            this.typeCharLow.AutoSize = true;
-            this.typeCharLow.Checked = true;
-            this.typeCharLow.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.typeCharLow.Location = new System.Drawing.Point(27, 72);
-            this.typeCharLow.Name = "typeCharLow";
-            this.typeCharLow.Size = new System.Drawing.Size(182, 20);
-            this.typeCharLow.TabIndex = 1;
-            this.typeCharLow.Text = "Буквы (нижний регистр)";
-            this.typeCharLow.UseVisualStyleBackColor = true;
+            this.typeSpChar.AutoSize = true;
+            this.typeSpChar.Checked = true;
+            this.typeSpChar.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.typeSpChar.Location = new System.Drawing.Point(27, 143);
+            this.typeSpChar.Name = "typeSpChar";
+            this.typeSpChar.Size = new System.Drawing.Size(175, 20);
+            this.typeSpChar.TabIndex = 3;
+            this.typeSpChar.Text = "Специальные символы";
+            this.typeSpChar.UseVisualStyleBackColor = true;
             // 
             // typeDigit
             // 
@@ -228,17 +220,29 @@
             this.typeDigit.Text = "Цифры";
             this.typeDigit.UseVisualStyleBackColor = true;
             // 
-            // typeSpChar
+            // typeCharLow
             // 
-            this.typeSpChar.AutoSize = true;
-            this.typeSpChar.Checked = true;
-            this.typeSpChar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.typeSpChar.Location = new System.Drawing.Point(27, 143);
-            this.typeSpChar.Name = "typeSpChar";
-            this.typeSpChar.Size = new System.Drawing.Size(175, 20);
-            this.typeSpChar.TabIndex = 3;
-            this.typeSpChar.Text = "Специальные символы";
-            this.typeSpChar.UseVisualStyleBackColor = true;
+            this.typeCharLow.AutoSize = true;
+            this.typeCharLow.Checked = true;
+            this.typeCharLow.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.typeCharLow.Location = new System.Drawing.Point(27, 72);
+            this.typeCharLow.Name = "typeCharLow";
+            this.typeCharLow.Size = new System.Drawing.Size(182, 20);
+            this.typeCharLow.TabIndex = 1;
+            this.typeCharLow.Text = "Буквы (нижний регистр)";
+            this.typeCharLow.UseVisualStyleBackColor = true;
+            // 
+            // typeCharUp
+            // 
+            this.typeCharUp.AutoSize = true;
+            this.typeCharUp.Checked = true;
+            this.typeCharUp.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.typeCharUp.Location = new System.Drawing.Point(27, 37);
+            this.typeCharUp.Name = "typeCharUp";
+            this.typeCharUp.Size = new System.Drawing.Size(187, 20);
+            this.typeCharUp.TabIndex = 0;
+            this.typeCharUp.Text = "Буквы (верхний регистр)";
+            this.typeCharUp.UseVisualStyleBackColor = true;
             // 
             // groupPassword
             // 
@@ -253,17 +257,6 @@
             this.groupPassword.TabStop = false;
             this.groupPassword.Text = "Пароль";
             // 
-            // textPassword
-            // 
-            this.textPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textPassword.Location = new System.Drawing.Point(8, 37);
-            this.textPassword.Name = "textPassword";
-            this.textPassword.ReadOnly = true;
-            this.textPassword.Size = new System.Drawing.Size(294, 22);
-            this.textPassword.TabIndex = 0;
-            this.textPassword.Text = "Здесь будет Ваш пароль...";
-            // 
             // buttonPassword
             // 
             this.buttonPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -274,6 +267,17 @@
             this.buttonPassword.TabIndex = 1;
             this.buttonPassword.Text = "Сгенерировать";
             this.buttonPassword.UseVisualStyleBackColor = true;
+            // 
+            // textPassword
+            // 
+            this.textPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textPassword.Location = new System.Drawing.Point(8, 37);
+            this.textPassword.Name = "textPassword";
+            this.textPassword.ReadOnly = true;
+            this.textPassword.Size = new System.Drawing.Size(294, 22);
+            this.textPassword.TabIndex = 0;
+            this.textPassword.Text = "Здесь будет Ваш пароль...";
             // 
             // FormMain
             // 
@@ -286,7 +290,7 @@
             this.Controls.Add(this.menuFormMain);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MainMenuStrip = this.menuFormMain;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Text = "AMPasswordGenerator";
             this.menuFormMain.ResumeLayout(false);

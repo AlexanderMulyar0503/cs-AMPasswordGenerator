@@ -16,5 +16,25 @@ namespace AMPasswordGenerator
         {
             InitializeComponent();
         }
+
+        private void menuFormMainExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void setNum4_Click(object sender, EventArgs e)
+        {
+            numChars.Value = 4;
+        }
+
+        private void setNum8_Click(object sender, EventArgs e)
+        {
+            numChars.Value = 8;
+        }
+
+        private void setNum12_Click(object sender, EventArgs e)
+        {
+            numChars.Value = 12;
+        }
     }
 }
