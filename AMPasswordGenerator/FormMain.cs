@@ -49,5 +49,11 @@ namespace AMPasswordGenerator
                 textPassword.Text = passwordGenerator.GetPasswordString(typeCharUp.Checked, typeCharLow.Checked, typeDigit.Checked, typeSpChar.Checked, Convert.ToInt32(numChars.Value));
             }
         }
+
+        private void menuFormMainAbout_Click(object sender, EventArgs e)
+        {
+            FormAbout formAbout = new FormAbout();
+            formAbout.ShowDialog();
+        }
     }
 }
