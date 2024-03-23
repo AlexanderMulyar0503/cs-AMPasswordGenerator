@@ -55,5 +55,11 @@ namespace AMPasswordGenerator
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
         }
+
+        private void menuFormMainSettings_Click(object sender, EventArgs e)
+        {
+            FormSettings formSettings = new FormSettings();
+            formSettings.ShowDialog();
+        }
     }
 }
