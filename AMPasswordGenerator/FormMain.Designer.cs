@@ -295,7 +295,10 @@
             this.MainMenuStrip = this.menuFormMain;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "AMPasswordGenerator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuFormMain.ResumeLayout(false);
             this.menuFormMain.PerformLayout();
             this.groupNum.ResumeLayout(false);

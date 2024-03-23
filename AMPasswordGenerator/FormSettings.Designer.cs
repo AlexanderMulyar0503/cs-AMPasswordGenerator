@@ -169,6 +169,7 @@
             this.buttonDefault.TabIndex = 2;
             this.buttonDefault.Text = "По умолчанию";
             this.buttonDefault.UseVisualStyleBackColor = true;
+            this.buttonDefault.Click += new System.EventHandler(this.buttonDefault_Click);
             // 
             // buttonOK
             // 
@@ -179,6 +180,7 @@
             this.buttonOK.TabIndex = 3;
             this.buttonOK.Text = "ОК";
             this.buttonOK.UseVisualStyleBackColor = true;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // buttonCancel
             // 
@@ -189,6 +191,7 @@
             this.buttonCancel.TabIndex = 4;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // FormSettings
             // 
@@ -202,6 +205,7 @@
             this.Controls.Add(this.groupPosition);
             this.Name = "FormSettings";
             this.Text = "Параметры";
+            this.Load += new System.EventHandler(this.FormSettings_Load);
             this.groupPosition.ResumeLayout(false);
             this.groupPosition.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.positionX)).EndInit();
@@ -217,17 +221,17 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupPosition;
-        private System.Windows.Forms.NumericUpDown positionX;
         private System.Windows.Forms.Label labelPositionY;
         private System.Windows.Forms.Label labelPositionX;
-        private System.Windows.Forms.NumericUpDown positionY;
         private System.Windows.Forms.GroupBox groupSize;
-        private System.Windows.Forms.NumericUpDown formHeight;
-        private System.Windows.Forms.NumericUpDown formWidth;
         private System.Windows.Forms.Label labelFormHeight;
         private System.Windows.Forms.Label labelFormWidth;
         private System.Windows.Forms.Button buttonDefault;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Button buttonCancel;
+        public System.Windows.Forms.NumericUpDown positionX;
+        public System.Windows.Forms.NumericUpDown positionY;
+        public System.Windows.Forms.NumericUpDown formHeight;
+        public System.Windows.Forms.NumericUpDown formWidth;
     }
 }
