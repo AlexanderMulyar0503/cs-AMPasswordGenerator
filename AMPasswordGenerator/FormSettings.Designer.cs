@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSettings));
             this.groupPosition = new System.Windows.Forms.GroupBox();
-            this.labelPositionX = new System.Windows.Forms.Label();
-            this.labelPositionY = new System.Windows.Forms.Label();
-            this.positionX = new System.Windows.Forms.NumericUpDown();
             this.positionY = new System.Windows.Forms.NumericUpDown();
+            this.positionX = new System.Windows.Forms.NumericUpDown();
+            this.labelPositionY = new System.Windows.Forms.Label();
+            this.labelPositionX = new System.Windows.Forms.Label();
             this.groupSize = new System.Windows.Forms.GroupBox();
-            this.labelFormWidth = new System.Windows.Forms.Label();
-            this.labelFormHeight = new System.Windows.Forms.Label();
-            this.formWidth = new System.Windows.Forms.NumericUpDown();
             this.formHeight = new System.Windows.Forms.NumericUpDown();
+            this.formWidth = new System.Windows.Forms.NumericUpDown();
+            this.labelFormHeight = new System.Windows.Forms.Label();
+            this.labelFormWidth = new System.Windows.Forms.Label();
             this.buttonDefault = new System.Windows.Forms.Button();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.groupPosition.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.positionX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.positionY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.positionX)).BeginInit();
             this.groupSize.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.formWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formWidth)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPosition
@@ -62,23 +63,17 @@
             this.groupPosition.TabStop = false;
             this.groupPosition.Text = "Положение";
             // 
-            // labelPositionX
+            // positionY
             // 
-            this.labelPositionX.AutoSize = true;
-            this.labelPositionX.Location = new System.Drawing.Point(6, 26);
-            this.labelPositionX.Name = "labelPositionX";
-            this.labelPositionX.Size = new System.Drawing.Size(14, 13);
-            this.labelPositionX.TabIndex = 0;
-            this.labelPositionX.Text = "X";
-            // 
-            // labelPositionY
-            // 
-            this.labelPositionY.AutoSize = true;
-            this.labelPositionY.Location = new System.Drawing.Point(6, 67);
-            this.labelPositionY.Name = "labelPositionY";
-            this.labelPositionY.Size = new System.Drawing.Size(14, 13);
-            this.labelPositionY.TabIndex = 1;
-            this.labelPositionY.Text = "Y";
+            this.positionY.Location = new System.Drawing.Point(84, 65);
+            this.positionY.Maximum = new decimal(new int[] {
+            8000,
+            0,
+            0,
+            0});
+            this.positionY.Name = "positionY";
+            this.positionY.Size = new System.Drawing.Size(60, 20);
+            this.positionY.TabIndex = 3;
             // 
             // positionX
             // 
@@ -92,17 +87,23 @@
             this.positionX.Size = new System.Drawing.Size(60, 20);
             this.positionX.TabIndex = 2;
             // 
-            // positionY
+            // labelPositionY
             // 
-            this.positionY.Location = new System.Drawing.Point(84, 65);
-            this.positionY.Maximum = new decimal(new int[] {
-            8000,
-            0,
-            0,
-            0});
-            this.positionY.Name = "positionY";
-            this.positionY.Size = new System.Drawing.Size(60, 20);
-            this.positionY.TabIndex = 3;
+            this.labelPositionY.AutoSize = true;
+            this.labelPositionY.Location = new System.Drawing.Point(6, 67);
+            this.labelPositionY.Name = "labelPositionY";
+            this.labelPositionY.Size = new System.Drawing.Size(14, 13);
+            this.labelPositionY.TabIndex = 1;
+            this.labelPositionY.Text = "Y";
+            // 
+            // labelPositionX
+            // 
+            this.labelPositionX.AutoSize = true;
+            this.labelPositionX.Location = new System.Drawing.Point(6, 26);
+            this.labelPositionX.Name = "labelPositionX";
+            this.labelPositionX.Size = new System.Drawing.Size(14, 13);
+            this.labelPositionX.TabIndex = 0;
+            this.labelPositionX.Text = "X";
             // 
             // groupSize
             // 
@@ -118,23 +119,17 @@
             this.groupSize.TabStop = false;
             this.groupSize.Text = "Размер";
             // 
-            // labelFormWidth
+            // formHeight
             // 
-            this.labelFormWidth.AutoSize = true;
-            this.labelFormWidth.Location = new System.Drawing.Point(6, 26);
-            this.labelFormWidth.Name = "labelFormWidth";
-            this.labelFormWidth.Size = new System.Drawing.Size(46, 13);
-            this.labelFormWidth.TabIndex = 0;
-            this.labelFormWidth.Text = "Ширина";
-            // 
-            // labelFormHeight
-            // 
-            this.labelFormHeight.AutoSize = true;
-            this.labelFormHeight.Location = new System.Drawing.Point(6, 67);
-            this.labelFormHeight.Name = "labelFormHeight";
-            this.labelFormHeight.Size = new System.Drawing.Size(45, 13);
-            this.labelFormHeight.TabIndex = 1;
-            this.labelFormHeight.Text = "Высота";
+            this.formHeight.Location = new System.Drawing.Point(84, 65);
+            this.formHeight.Maximum = new decimal(new int[] {
+            8000,
+            0,
+            0,
+            0});
+            this.formHeight.Name = "formHeight";
+            this.formHeight.Size = new System.Drawing.Size(60, 20);
+            this.formHeight.TabIndex = 3;
             // 
             // formWidth
             // 
@@ -148,17 +143,23 @@
             this.formWidth.Size = new System.Drawing.Size(60, 20);
             this.formWidth.TabIndex = 2;
             // 
-            // formHeight
+            // labelFormHeight
             // 
-            this.formHeight.Location = new System.Drawing.Point(84, 65);
-            this.formHeight.Maximum = new decimal(new int[] {
-            8000,
-            0,
-            0,
-            0});
-            this.formHeight.Name = "formHeight";
-            this.formHeight.Size = new System.Drawing.Size(60, 20);
-            this.formHeight.TabIndex = 3;
+            this.labelFormHeight.AutoSize = true;
+            this.labelFormHeight.Location = new System.Drawing.Point(6, 67);
+            this.labelFormHeight.Name = "labelFormHeight";
+            this.labelFormHeight.Size = new System.Drawing.Size(45, 13);
+            this.labelFormHeight.TabIndex = 1;
+            this.labelFormHeight.Text = "Высота";
+            // 
+            // labelFormWidth
+            // 
+            this.labelFormWidth.AutoSize = true;
+            this.labelFormWidth.Location = new System.Drawing.Point(6, 26);
+            this.labelFormWidth.Name = "labelFormWidth";
+            this.labelFormWidth.Size = new System.Drawing.Size(46, 13);
+            this.labelFormWidth.TabIndex = 0;
+            this.labelFormWidth.Text = "Ширина";
             // 
             // buttonDefault
             // 
@@ -203,17 +204,18 @@
             this.Controls.Add(this.buttonDefault);
             this.Controls.Add(this.groupSize);
             this.Controls.Add(this.groupPosition);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSettings";
             this.Text = "Параметры";
             this.Load += new System.EventHandler(this.FormSettings_Load);
             this.groupPosition.ResumeLayout(false);
             this.groupPosition.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.positionX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.positionY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.positionX)).EndInit();
             this.groupSize.ResumeLayout(false);
             this.groupSize.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.formWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.formWidth)).EndInit();
             this.ResumeLayout(false);
 
         }

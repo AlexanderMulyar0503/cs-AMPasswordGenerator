@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuFormMain = new System.Windows.Forms.MenuStrip();
             this.menuFormMainFile = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormMainSettings = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,19 +81,19 @@
             // menuFormMainSettings
             // 
             this.menuFormMainSettings.Name = "menuFormMainSettings";
-            this.menuFormMainSettings.Size = new System.Drawing.Size(180, 22);
+            this.menuFormMainSettings.Size = new System.Drawing.Size(138, 22);
             this.menuFormMainSettings.Text = "Параметры";
             this.menuFormMainSettings.Click += new System.EventHandler(this.menuFormMainSettings_Click);
             // 
             // menuFormMainSeparator1
             // 
             this.menuFormMainSeparator1.Name = "menuFormMainSeparator1";
-            this.menuFormMainSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.menuFormMainSeparator1.Size = new System.Drawing.Size(135, 6);
             // 
             // menuFormMainExit
             // 
             this.menuFormMainExit.Name = "menuFormMainExit";
-            this.menuFormMainExit.Size = new System.Drawing.Size(180, 22);
+            this.menuFormMainExit.Size = new System.Drawing.Size(138, 22);
             this.menuFormMainExit.Text = "Выход";
             this.menuFormMainExit.Click += new System.EventHandler(this.menuFormMainExit_Click);
             // 
@@ -292,6 +293,7 @@
             this.Controls.Add(this.groupNum);
             this.Controls.Add(this.menuFormMain);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuFormMain;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
