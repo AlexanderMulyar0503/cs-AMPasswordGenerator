@@ -206,6 +206,7 @@
             this.Controls.Add(this.groupPosition);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Параметры";
             this.Load += new System.EventHandler(this.FormSettings_Load);
             this.groupPosition.ResumeLayout(false);
