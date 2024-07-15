@@ -58,12 +58,12 @@ namespace AMPasswordGenerator
 
         private void menuFormMainSettings_Click(object sender, EventArgs e)
         {
-            FormSettings formSettings = new FormSettings();
-            formSettings.positionX.Value = this.Location.X;
-            formSettings.positionY.Value = this.Location.Y;
-            formSettings.formWidth.Value = this.Size.Width;
-            formSettings.formHeight.Value = this.Size.Height;
-            formSettings.ShowDialog();
+            Properties.Settings.Default.positionX = 25;
+            Properties.Settings.Default.positionY = 25;
+            Properties.Settings.Default.sizeWidth = 350;
+            Properties.Settings.Default.sizeHeight = 550;
+            Properties.Settings.Default.Save();
+
             this.Location = new Point(Properties.Settings.Default.positionX, Properties.Settings.Default.positionY);
             this.Size = new Size(Properties.Settings.Default.sizeWidth, Properties.Settings.Default.sizeHeight);
         }

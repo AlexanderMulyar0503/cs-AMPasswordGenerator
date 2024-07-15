@@ -81,19 +81,19 @@
             // menuFormMainSettings
             // 
             this.menuFormMainSettings.Name = "menuFormMainSettings";
-            this.menuFormMainSettings.Size = new System.Drawing.Size(138, 22);
-            this.menuFormMainSettings.Text = "Параметры";
+            this.menuFormMainSettings.Size = new System.Drawing.Size(224, 22);
+            this.menuFormMainSettings.Text = "Параметры по умолчанию";
             this.menuFormMainSettings.Click += new System.EventHandler(this.menuFormMainSettings_Click);
             // 
             // menuFormMainSeparator1
             // 
             this.menuFormMainSeparator1.Name = "menuFormMainSeparator1";
-            this.menuFormMainSeparator1.Size = new System.Drawing.Size(135, 6);
+            this.menuFormMainSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // menuFormMainExit
             // 
             this.menuFormMainExit.Name = "menuFormMainExit";
-            this.menuFormMainExit.Size = new System.Drawing.Size(138, 22);
+            this.menuFormMainExit.Size = new System.Drawing.Size(224, 22);
             this.menuFormMainExit.Text = "Выход";
             this.menuFormMainExit.Click += new System.EventHandler(this.menuFormMainExit_Click);
             // 
